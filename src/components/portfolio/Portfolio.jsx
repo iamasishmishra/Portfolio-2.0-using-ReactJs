@@ -1,11 +1,11 @@
 import "./portfolio.css";
 
-import IMG1 from "../../assets/Educational Website.jpg";
-import IMG2 from "../../assets/RubyCode Blog Project.jpg";
-import IMG3 from "../../assets/Startup Agency Project.jpg";
-import IMG4 from "../../assets/Covid-19 Project.jpg";
-import IMG5 from "../../assets/Jokes Project.jpg";
-import IMG6 from "../../assets/Project4.jpg";
+import IMG1 from "../../assets/Lib.png";
+import IMG2 from "../../assets/Realestate.jpeg";
+import IMG3 from "../../assets/Atm.jpeg";
+import IMG4 from "../../assets/Port.png";
+import IMG5 from "../../assets/MerchantSpring.jpg";
+import IMG6 from "../../assets/Weatherapp.jpeg";
 import React from "react";
 
 //Portfolio function
@@ -13,69 +13,68 @@ const Portfolio = () => {
   const soloProjects = [
     {
       id: 1,
-      title: "Educational Website with React.js",
+      title: "Library Management Project",
       img: IMG1,
       description:
-        "An educational website is a huge interactive platform to present various information for people.",
-      technologies: "Html | CSS | Javascript | React Js",
-      link: "https://educational-website-reactjs.netlify.app/",
-      github: "https://github.com/Rasif-Taghizada/Educational-Website-ReactJs",
+        "Local Pc project for handle the Library System",
+      technologies: "Python  -  MySql",
+      // link: "https://educational-website-reactjs.netlify.app/",
+      github: "https://github.com/iamasishmishra/LibraryManagementSystem-Python-Mysql",
     },
     {
       id: 2,
-      title: "Covid-19 Tracking App",
+      title: "My Portfolio 1.0",
       img: IMG4,
       description:
-        "The COVID Tracking Project collects and publishes the most complete testing data available for all areas of the world.",
-      technologies: "React | Redux",
-      link: "https://covid-19-tracker-weld-nu.vercel.app/",
-      github: "https://github.com/Rasif-Taghizada/Covid-19-Tracking",
+        "Basic Portfolio Design. Describes What i have done till now..",
+      technologies: "Html  -  Css  -  JavaScript",
+      // link: "https://covid-19-tracker-weld-nu.vercel.app/",
+      github: "https://github.com/iamasishmishra/My-Portfolio",
     },
     {
       id: 3,
-      title: "RubyCode Blog Project",
+      title: "Real E state Using React",
       img: IMG2,
-      description: "This site is a kind of social media platform. You can register and share your posts.",
-      technologies: "React | Redux",
-      link: "https://rubycode-blog-project.vercel.app/",
-      github: "https://github.com/Rasif-Taghizada/RubyCode-Blog",
+      description: "It includes all the information about house/flat for buy, rent and repair.",
+      technologies: "Html  -  Css  -  Java Script  -  React Js",
+      // link: "https://rubycode-blog-project.vercel.app/",
+      github: "https://github.com/iamasishmishra/Real-estate-app-reactjs",
     },
     {
       id: 4,
-      title: "Startup Landing Page",
+      title: "Atm Machine Using Core Java",
       img: IMG3,
-      description:
-        "A dedicated, standalone web page built for specific campaigns and target audiences.",
-      technologies: "Html | CSS | JavaScript | Next Js",
-      link: "https://alpha-agency-project.vercel.app/",
-      github: "https://github.com/Rasif-Taghizada/Alpha-Agency-Project",
+      description: "This Project includes all the Atm operations",
+      technologies: "Core Java",
+      // link: "https://alpha-agency-project.vercel.app/",
+      github: "https://github.com/iamasishmishra/Atm-Machine-Proj",
     },
     {
       id: 5,
-      title: "Jokes Project with Typescript",
+      title: "Spring-Emp-application",
       img: IMG5,
       description:
-        "For when you need a fast funny joke, here are some short jokes to get anyone giggling.",
-      technologies: "Html | Styled-components | Typescript",
-      link: "https://jokes-project.vercel.app/",
-      github: "https://github.com/Rasif-Taghizada/Joke-App",
+        "This includes All the operations regarding Employye(find,save,delete,find with id,salary ranges",
+      technologies: "Java  -  Spring",
+      // link: "https://jokes-project.vercel.app/",
+      github: "https://github.com/iamasishmishra/Spring-emp-App",
     },
     {
       id: 6,
-      title: "Fs Poster Website",
+      title: "Weather App using Java Script",
       img: IMG6,
       description:
-        "Real-world group project which is still in progress and will provide educational platform for future young developers",
-      technologies: "Html | Scss | Javascript",
-      link: "https://fs-poster-project.vercel.app/",
-      github: "https://github.com/Rasif-Taghizada/Fs-Poster-Project",
+        "Fetch all data of different cities based on cities's weather",
+      technologies: "Html -  Css - Javascript",
+      // link: "https://fs-poster-project.vercel.app/",
+      github: "https://github.com/iamasishmishra/Weather-app",
     },
   ];
 
   return (
     <section id="portfolio">
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h5>My Contributions</h5>
+      <h2>Project Portfolios</h2>
 
       <div className="container portfolio__container">
         {soloProjects.map((pro) => (
@@ -97,14 +96,14 @@ const Portfolio = () => {
               >
                 GitHub
               </a>
-              <a
+              {/* <a
                 href={pro.link}
                 target="_blank"
                 className="btn btn-primary"
                 rel="noreferrer"
               >
-                Live Demo
-              </a>
+                Not Live Yet
+              </a> */}
             </div>
           </article>
         ))}
